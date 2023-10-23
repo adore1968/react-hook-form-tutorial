@@ -8,10 +8,12 @@ function HomePage() {
     handleSubmit,
     formState: { errors },
     watch,
+    reset,
   } = useForm();
 
   const onSubmit = handleSubmit((data) => {
     console.log(data);
+    reset();
   });
 
   return (
